@@ -10,8 +10,8 @@ public class PruebaFactura {
         System.out.println("Numero de pieza: " + factura1.getNumeroDePieza());
         System.out.println("Descripcion: " + factura1.getDescricionPieza());
         System.out.println("Cantidad de venta: " + factura1.getCantidadCompra());
-        System.out.println("Precio: " + factura1.getPrecio());
-        System.out.println("El total es: " + factura1.obtenerMontoFactura());
+        System.out.println("Precio: " + String.format("%.2f", factura1.getPrecio()));
+        System.out.println("El total es: " + String.format("%.2f", factura1.obtenerMontoFactura()));
 
         System.out.println();
 
@@ -21,8 +21,8 @@ public class PruebaFactura {
         System.out.println("Numero de pieza: " + factura2.getNumeroDePieza());
         System.out.println("Descripcion: " + factura2.getDescricionPieza());
         System.out.println("Cantidad de venta: " + factura2.getCantidadCompra());
-        System.out.println("Precio: " + factura2.getPrecio());
-        System.out.println("El total es: " + factura2.obtenerMontoFactura());
+        System.out.println("Precio: " + String.format("%.2f", factura2.getPrecio()));
+        System.out.println("El total es: " + String.format("%.2f", factura2.obtenerMontoFactura()));
         //se quedan en cero y no los valores negativos
     }
 }

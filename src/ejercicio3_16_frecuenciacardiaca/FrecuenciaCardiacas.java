@@ -16,7 +16,6 @@ public class FrecuenciaCardiacas {
         this.mes = mes;
         this.anio = anio;
     }
-
     // Métodos establecer y obtener
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -57,7 +56,6 @@ public class FrecuenciaCardiacas {
     public int getAnio() {
         return anio;
     }
-
     // metodos de calculo
     // calcula la edad, si todavia no a cumplido años en este año se le resta uno
     public int edad(){
@@ -76,7 +74,7 @@ public class FrecuenciaCardiacas {
 
     // rango esperado entre el 50 y el 85 porciento de la maxima
     public String FrecuenciaEsperada (){
-        return (PulsosMaximos() * 0.50) + " - " + (PulsosMaximos() * 0.85);
+        return String.format("%.2f - %.2f", PulsosMaximos() * 0.50, PulsosMaximos() * 0.85);
     }
 
     public String getInfo (){

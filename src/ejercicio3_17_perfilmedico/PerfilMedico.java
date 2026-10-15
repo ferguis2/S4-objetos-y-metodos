@@ -113,7 +113,7 @@ public class PerfilMedico {
         double minimoEsperado = maxima * 0.50;
         double maximoEsperado = maxima * 0.85;
 
-        return minimoEsperado + " - " + maximoEsperado;
+        return String.format("%.2f - %.2f", minimoEsperado, maximoEsperado);
     }
 
     // indice de masa corporal, la altura se combierte de centimetros a metros

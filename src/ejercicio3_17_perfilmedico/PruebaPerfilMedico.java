@@ -46,7 +46,7 @@ public class PruebaPerfilMedico {
         System.out.println("Edad: " + perfil.edadUsuario() + " anios");
         System.out.println("Frecuencia cardiaca maxima: " + perfil.frecuenciaCardiacaMaxima() + " latidos por minuto");
         System.out.println("Rango de frecuencia esperada: " + perfil.frecuenciaCardiacaEsperada() + " latidos por minuto");
-        System.out.println("Indice de Masa Corporal (BMI): " + perfil.calcularBMI());
+        System.out.println("Indice de Masa Corporal (BMI): " + String.format("%.2f", perfil.calcularBMI()));
 
         // tabla de los valores del BMI
         System.out.println("\n VALORES DE BMI ");
